@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsweek</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+          padding: 0;
+          margin: 0;
+          height: 100%;
+        }
+
+        header,
+        main,
+        footer,
+        .p-2 > div {
+            border: 1px solid;
+        }
+
+        .d-flex > div {
+            border: 1px solid;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .content {
+               display: flex;
+               flex-direction: column;
+            }
+
+            .content-1,
+            .content-2,
+            .content-3 {
+                display: contents;
+            }
+
+            #top-story {order: 1;}
+            #featured-stories {order: 2;}
+            #sponsored-insights-1 {order: 3;}
+            #my-turn {order: 4;}
+            #culture {order: 5;}
+            #more-stories {order: 6;}
+            #latest-news {order: 7;}
+            #the-debate {order: 8;}
+            #opinion {order: 9;}
+            #sponsored-insights-2 {order: 10;}
+            #signup {order: 11;}
+        }
+
+    </style>
+</head>
+<body>
+   <header>Header</header>
+   <main class="p-1">
+       <div class="d-flex flex-wrap content">
+        <div class="p-2 flex-fill content-1">
+            <div class="p-2 mb-2" id="featured-stories">
+                Featured Stories 1 1
+            </div>
+            <div class="p-2 mb-2" id="sponsored-insights-1">
+                Sponsored insights / Rankings 1 2
+            </div>
+        </div>
+        <div class="p-2 flex-fill content-2">
+            <div class="p-2 mb-2" id="top-story">
+                Top story 2 1
+            </div>
+            <div class="p-2 mb-2" id="my-turn">
+                    My Turn 2 2
+            </div>
+            <div class="p-2 mb-2" id="culture">
+                    Culture & Travel 2 3
+            </div>
+            <div class="p-2 mb-2" id="more-stories">
+                    More Stories 2 4
+            </div>
+            <div class="p-2 mb-2" id="latest-news">
+                    Latest news 2 5
+            </div>
+        </div>
+        <div class="p-2 flex-fill content-3">
+            <div class="p-2 mb-2" id="the-debate">
+                The Debate 3 1
+            </div>
+            <div class="p-2 mb-2" id="opinion">
+                Opinion 3 2
+            </div>
+            <div class="p-2 mb-2" id="sponsored-insights-2">
+                Sponsored insights / Rankings 3 3
+            </div>
+            <div class="p-2 mb-2" id="signup">
+                Free Signup 3 4
+            </div>
+        </div>
+      </div>
+
+   </main>
+   <footer>Footer</footer>
+</body>
+</html>
